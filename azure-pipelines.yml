@@ -8,6 +8,7 @@ trigger:
 
 pool:
   vmImage: ubuntu-latest
+  name: azure-pipeline-self-hosted
 
 variables:
   buildConfiguration: 'Release'
