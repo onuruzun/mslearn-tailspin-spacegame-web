@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  name: test pipelines
+  name: 'test pipelines'
 
 variables:
   buildConfiguration: 'Release'
