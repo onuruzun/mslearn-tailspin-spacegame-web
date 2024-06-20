@@ -19,6 +19,12 @@ steps:
 - script: './node_modules/.bin/node-sass Tailspin.SpaceGame.Web/wwwroot --output Tailspin.SpaceGame.Web/wwwroot'
   displayName: 'Compile Sass assets'
 
+- script: |
+    npm cache clean --force
+    sudo chown -R $(whoami) ~/.npm
+    npm install
+  displayName: 'Run npm install'
+
 - task: gulp@1
   displayName: 'Run gulp tasks'
 
